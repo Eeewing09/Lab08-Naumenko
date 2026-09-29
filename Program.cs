@@ -50,19 +50,66 @@
 // }
 // Console.WriteLine($"Макс балл {maks}");
 
-string correctPassword = "qwerty123";
-int count = 0;
+// string correctPassword = "qwerty123";
+// int count = 0;
 
-while (true) {
-    Console.Write("Введите пароль от личного кабинета: ");
-    string password = Console.ReadLine();
+// while (true) {
+//     Console.Write("Введите пароль от личного кабинета: ");
+//     string password = Console.ReadLine();
 
-    if (password == correctPassword) {
-        Console.WriteLine("Доступ разрешён");
-        break;
-    }
+//     if (password == correctPassword) {
+//         Console.WriteLine("Доступ разрешён");
+//         break;
+//     }
 
-    Console.WriteLine("Неверный пароль, попробуйте снова");
+//     Console.WriteLine("Неверный пароль, попробуйте снова");
+//     count++;
+// }
+// Console.WriteLine($"Кол-во неверных попыток {count}");
+
+// string answer;
+
+// do {
+//     Console.Write("Введите дату посещения (например, 01.09): ");
+//     string date = Console.ReadLine();
+//     Console.WriteLine($"Запись добавлена: {date}");
+
+//     Console.Write("Добавить ещё одну запись? (да/нет): ");
+//     answer = Console.ReadLine();
+// } while (answer == "да");
+
+// Console.WriteLine("Дневник сохранён");
+
+Console.WriteLine("Введите число:");
+int num = int.Parse(Console.ReadLine());
+int count = 1;
+while (count <= 10)
+{
+    Console.WriteLine($"{num} * {count} = {count * num}");
     count++;
 }
-Console.WriteLine($"Кол-во неверных попыток {count}");
+
+Console.WriteLine("Введите число:");
+while (true)
+{
+    int count1 = int.Parse(Console.ReadLine());
+    if (count1 % 7 == 0)
+    {
+        Console.WriteLine("Найдено!");
+        break;
+    }
+}
+
+Console.Write("Введите свою фамилию: ");
+string surname = Console.ReadLine()!.Trim();
+if (string.IsNullOrEmpty(surname)) {
+Console.WriteLine("Фамилия не введена. Завершение работы.");
+return;
+}
+Random rnd = new(surname.GetHashCode() + DateTime.Now.DayOfYear);
+var assigned = Enumerable.Range(1, 10)
+.OrderBy(_ => rnd.Next())
+.Take(2)
+.OrderBy(x => x)
+.ToList();
+Console.WriteLine($"Задачи: №{assigned[0]} и №{assigned[1]}");
