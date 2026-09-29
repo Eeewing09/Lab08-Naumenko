@@ -1,0 +1,14 @@
+C:\Users\Student_04\documents\lab08_Naumenko\bin\Debug\net10.0\lab08_Naumenko.exe
+C:\Users\Student_04\documents\lab08_Naumenko\bin\Debug\net10.0\lab08_Naumenko.deps.json
+C:\Users\Student_04\documents\lab08_Naumenko\bin\Debug\net10.0\lab08_Naumenko.runtimeconfig.json
+C:\Users\Student_04\documents\lab08_Naumenko\bin\Debug\net10.0\lab08_Naumenko.dll
+C:\Users\Student_04\documents\lab08_Naumenko\bin\Debug\net10.0\lab08_Naumenko.pdb
+C:\Users\Student_04\documents\lab08_Naumenko\obj\Debug\net10.0\lab08_Naumenko.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Student_04\documents\lab08_Naumenko\obj\Debug\net10.0\lab08_Naumenko.AssemblyInfoInputs.cache
+C:\Users\Student_04\documents\lab08_Naumenko\obj\Debug\net10.0\lab08_Naumenko.AssemblyInfo.cs
+C:\Users\Student_04\documents\lab08_Naumenko\obj\Debug\net10.0\lab08_Naumenko.csproj.CoreCompileInputs.cache
+C:\Users\Student_04\documents\lab08_Naumenko\obj\Debug\net10.0\lab08_Naumenko.dll
+C:\Users\Student_04\documents\lab08_Naumenko\obj\Debug\net10.0\refint\lab08_Naumenko.dll
+C:\Users\Student_04\documents\lab08_Naumenko\obj\Debug\net10.0\lab08_Naumenko.pdb
+C:\Users\Student_04\documents\lab08_Naumenko\obj\Debug\net10.0\lab08_Naumenko.genruntimeconfig.cache
+C:\Users\Student_04\documents\lab08_Naumenko\obj\Debug\net10.0\ref\lab08_Naumenko.dll
