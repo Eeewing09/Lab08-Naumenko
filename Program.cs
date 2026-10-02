@@ -20,52 +20,52 @@
 // Console.WriteLine("Ввод завершен");
 // Console.WriteLine($"Всего оценок введено {occ}");
 
-// int sum = 0;
-// int count = 0;
-// int grade1 = 0;
-// int maks = 0;
+int sum = 0;
+int count2 = 0;
+int grade1 = 0;
+int maks = 0;
 
-// Console.WriteLine("Вводите оценки, для завершения введите -1:");
-// int grade = int.Parse(Console.ReadLine());
-// while (grade != -1)
-// {
-//     sum += grade;
-//     count++;
-//     grade = int.Parse(Console.ReadLine());
-//     if (grade >= grade1)
-//     {
-//         maks = grade;
-//     }
-//     grade1 = grade;
+Console.WriteLine("Вводите оценки, для завершения введите -1:");
+int grade = int.Parse(Console.ReadLine());
+while (grade != -1)
+{
+    sum += grade;
+    count2++;
+    grade = int.Parse(Console.ReadLine());
+    if (grade >= grade1)
+    {
+        maks = grade;
+    }
+    grade1 = grade;
 
-// }
+}
 
-// if (count > 0)
-// {
-//     Console.WriteLine($"Средний балл: {(double)sum / count}");
-// }
-// else
-// {
-//     Console.WriteLine("Оценок не было введено");
-// }
-// Console.WriteLine($"Макс балл {maks}");
+if (count2 > 0)
+{
+    Console.WriteLine($"Средний балл: {(double)sum / count2}");
+}
+else
+{
+    Console.WriteLine("Оценок не было введено");
+}
+Console.WriteLine($"Макс балл {maks}");
 
-// string correctPassword = "qwerty123";
-// int count = 0;
+string correctPassword = "qwerty123";
+int count = 0;
 
-// while (true) {
-//     Console.Write("Введите пароль от личного кабинета: ");
-//     string password = Console.ReadLine();
+while (true) {
+    Console.Write("Введите пароль от личного кабинета: ");
+    string password = Console.ReadLine();
 
-//     if (password == correctPassword) {
-//         Console.WriteLine("Доступ разрешён");
-//         break;
-//     }
+    if (password == correctPassword) {
+        Console.WriteLine("Доступ разрешён");
+        break;
+    }
 
-//     Console.WriteLine("Неверный пароль, попробуйте снова");
-//     count++;
-// }
-// Console.WriteLine($"Кол-во неверных попыток {count}");
+    Console.WriteLine("Неверный пароль, попробуйте снова");
+    count++;
+}
+Console.WriteLine($"Кол-во неверных попыток {count}");
 
 // string answer;
 
@@ -114,37 +114,77 @@
 // .ToList();
 // Console.WriteLine($"Задачи: №{assigned[0]} и №{assigned[1]}");
 // Задача 2
-int count = int.Parse(Console.ReadLine());
-int sum1 = 0;
-while (true)
-{
-    if (count > 0)
-    {
-        sum1 = sum1 + count;
-    }
+// int count = int.Parse(Console.ReadLine());
+// int sum1 = 0;
+// while (true)
+// {
+//     if (count > 0)
+//     {
+//         sum1 = sum1 + count;
+//     }
 
-    if (count == 0)
-    {
-        Console.WriteLine("Конец");
-        break;
-    }
-    count = int.Parse(Console.ReadLine());
-}
-Console.WriteLine(sum1);
+//     if (count == 0)
+//     {
+//         Console.WriteLine("Конец");
+//         break;
+//     }
+//     count = int.Parse(Console.ReadLine());
+// }
+// Console.WriteLine(sum1);
 
-// Задача 10
-int score = int.Parse(Console.ReadLine());
-int eq5 = 0;
-while (true)
-{
-    if (score / 5 == 1)
-    {
-        eq5 += 1;
-    }
-    if (score == -1)
-    {
-        break;
-    }
-    score = int.Parse(Console.ReadLine());
-}
-Console.WriteLine(eq5);
+// // Задача 10
+// int score = int.Parse(Console.ReadLine());
+// int eq5 = 0;
+// while (true)
+// {
+//     if (score / 5 == 1)
+//     {
+//         eq5 += 1;
+//     }
+//     if (score == -1)
+//     {
+//         break;
+//     }
+//     score = int.Parse(Console.ReadLine());
+// }
+// Console.WriteLine(eq5);
+
+// string password = "engine2";
+// int attempts = 0;
+// int money = 0;
+// int money_s = 0;
+// string pass1 = "";
+// bool isAuthorized = false;
+// while (attempts < 3)
+// {
+//     Console.Write("Введите код: ");
+//     pass1 = Console.ReadLine();
+
+//     if (pass1 == password)
+//     {
+//         isAuthorized = true;
+//         break;
+//     } else
+//     {
+//         attempts++;
+//     }
+// }
+
+// if (isAuthorized == false)
+// {
+//     Console.WriteLine("Карта заблокирована");
+// }
+// else
+// {
+//     while (true)
+//     {
+//         Console.Write("Введите сумму снятия (или 0 для выхода): ");
+//         money = int.Parse(Console.ReadLine());
+//         money_s += money;
+//         if (money == 0)
+//         {
+//             break;
+//         }
+//     }
+//     Console.WriteLine($"Итоговая снятая сумма: {money_s}");
+// }
