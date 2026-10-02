@@ -79,37 +79,72 @@
 // } while (answer == "да");
 
 // Console.WriteLine("Дневник сохранён");
+// Задача А
+// Console.WriteLine("Введите число:");
+// int num = int.Parse(Console.ReadLine());
+// int count = 1;
+// while (count <= 10)
+// {
+//     Console.WriteLine($"{num} * {count} = {count * num}");
+//     count++;
+// }
+// // Задача Г
+// Console.WriteLine("Введите число:");
+// while (true)
+// {
+//     int count1 = int.Parse(Console.ReadLine());
+//     if (count1 % 7 == 0)
+//     {
+//         Console.WriteLine("Найдено!");
+//         break;
+//     }
+// }
 
-Console.WriteLine("Введите число:");
-int num = int.Parse(Console.ReadLine());
-int count = 1;
-while (count <= 10)
-{
-    Console.WriteLine($"{num} * {count} = {count * num}");
-    count++;
-}
-
-Console.WriteLine("Введите число:");
+// Console.Write("Введите свою фамилию: ");
+// string surname = Console.ReadLine()!.Trim();
+// if (string.IsNullOrEmpty(surname)) {
+// Console.WriteLine("Фамилия не введена. Завершение работы.");
+// return;
+// }
+// Random rnd = new(surname.GetHashCode() + DateTime.Now.DayOfYear);
+// var assigned = Enumerable.Range(1, 10)
+// .OrderBy(_ => rnd.Next())
+// .Take(2)
+// .OrderBy(x => x)
+// .ToList();
+// Console.WriteLine($"Задачи: №{assigned[0]} и №{assigned[1]}");
+// Задача 2
+int count = int.Parse(Console.ReadLine());
+int sum1 = 0;
 while (true)
 {
-    int count1 = int.Parse(Console.ReadLine());
-    if (count1 % 7 == 0)
+    if (count > 0)
     {
-        Console.WriteLine("Найдено!");
+        sum1 = sum1 + count;
+    }
+
+    if (count == 0)
+    {
+        Console.WriteLine("Конец");
         break;
     }
+    count = int.Parse(Console.ReadLine());
 }
+Console.WriteLine(sum1);
 
-Console.Write("Введите свою фамилию: ");
-string surname = Console.ReadLine()!.Trim();
-if (string.IsNullOrEmpty(surname)) {
-Console.WriteLine("Фамилия не введена. Завершение работы.");
-return;
+// Задача 10
+int score = int.Parse(Console.ReadLine());
+int eq5 = 0;
+while (true)
+{
+    if (score / 5 == 1)
+    {
+        eq5 += 1;
+    }
+    if (score == -1)
+    {
+        break;
+    }
+    score = int.Parse(Console.ReadLine());
 }
-Random rnd = new(surname.GetHashCode() + DateTime.Now.DayOfYear);
-var assigned = Enumerable.Range(1, 10)
-.OrderBy(_ => rnd.Next())
-.Take(2)
-.OrderBy(x => x)
-.ToList();
-Console.WriteLine($"Задачи: №{assigned[0]} и №{assigned[1]}");
+Console.WriteLine(eq5);
